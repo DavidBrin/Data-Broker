@@ -1,0 +1,125 @@
+/* Dashboard page styles */
+
+.dashboard {
+  padding: var(--spacing-2xl) 0;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-2xl);
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+}
+
+.dashboard-header h1 {
+  font-size: 1.875rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.datasets-section {
+  margin-top: var(--spacing-2xl);
+}
+
+.datasets-section h2 {
+  margin-bottom: var(--spacing-lg);
+}
+
+.datasets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.dataset-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.dataset-card h3 {
+  margin-bottom: var(--spacing-md);
+}
+
+.dataset-description {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.4;
+}
+
+.dataset-info {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-block;
+  background-color: var(--color-primary-light);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-md);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge.stage {
+  background-color: var(--color-secondary);
+}
+
+.quality-score {
+  background-color: var(--color-bg-secondary);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.dataset-stats {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-secondary);
+}
+
+.dataset-stats small {
+  font-size: 0.75rem;
+}
+
+.card-footer {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.btn-sm {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: 0.8rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-text-secondary);
+}
+
+.empty-state a {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.info-section {
+  margin-top: var(--spacing-2xl);
+}
+
+.marketplace-section {
+  margin: var(--spacing-2xl) 0;
+}

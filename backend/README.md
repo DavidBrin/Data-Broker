@@ -122,7 +122,7 @@ Key tables:
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 3.12+
 - pip or conda
 - PostgreSQL (or SQLite for dev)
 - (Optional) AWS S3 credentials for cloud storage

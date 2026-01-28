@@ -68,7 +68,7 @@ class IngestionService:
             description=description,
             source_type=source_type,
             file_path='',  # Will be set during ingestion
-            metadata=metadata or {},
+            dataset_metadata=metadata or {},
         )
         db.session.add(dataset)
         db.session.commit()

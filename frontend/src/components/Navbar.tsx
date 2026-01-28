@@ -4,7 +4,7 @@
  */
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { LogOut, Home, BarChart3 } from 'lucide-react';
+import { LogOut, Home, BarChart3, ShoppingCart } from 'lucide-react';
 import { User } from '../types';
 import './Navbar.css';
 

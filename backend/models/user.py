@@ -10,6 +10,7 @@ class UserRole(str, Enum):
     """User roles in the platform."""
     SUPPLIER = "supplier"  # Data suppliers (crowd, universities, enterprises)
     BUYER = "buyer"  # Data buyers (AI labs, companies)
+    BOTH = "both"  # Users who are both suppliers and buyers
     ADMIN = "admin"  # Platform administrators
     MODERATOR = "moderator"  # Content moderators
 

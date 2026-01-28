@@ -178,7 +178,7 @@ def update_dataset(dataset_id: str):
     if 'is_public' in data:
         dataset.is_public = data['is_public']
     if 'metadata' in data:
-        dataset.metadata.update(data['metadata'])
+        dataset.dataset_metadata.update(data['metadata'])
     
     db.session.commit()
     

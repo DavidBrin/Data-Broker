@@ -35,7 +35,12 @@ const RegisterPage: React.FC<RegisterPageProps> = ({ onRegister }) => {
     setLoading(true);
 
     try {
-      const user = await apiService.register(formData);
+      // Ensure role is one of the valid types
+      const registrationData = {
+        ...formData,
+        role: formData.role as 'supplier' | 'buyer' | 'both',
+      };
+      const user = await apiService.register(registrationData);
       onRegister(user);
       navigate('/dashboard');
     } catch (err: any) {

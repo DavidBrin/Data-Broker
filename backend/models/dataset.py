@@ -38,7 +38,7 @@ class Dataset(BaseModel):
         file_path: Local or cloud storage path to raw files
         file_count: Number of files in the dataset
         total_size_bytes: Total size of all files
-        metadata: JSON field for flexible key-value data about dataset
+        dataset_metadata: JSON field for flexible key-value data about dataset
         stage: Current pipeline stage
         quality_score: Overall quality metric (0-1)
         is_public: Whether dataset can be viewed by others in marketplace
@@ -56,7 +56,7 @@ class Dataset(BaseModel):
     total_size_bytes = db.Column(db.BigInteger, default=0)
     
     # Flexible metadata storage
-    metadata = db.Column(db.JSON, default=dict)
+    dataset_metadata = db.Column(db.JSON, default=dict)
     
     # Pipeline tracking
     stage = db.Column(db.String(50), default=PipelineStage.INGESTED.value)
@@ -167,7 +167,7 @@ class DataPackage(BaseModel):
     
     # Manifest and documentation
     manifest = db.Column(db.JSON)  # File listing, format info, etc.
-    metadata = db.Column(db.JSON)  # Extended metadata about package contents
+    package_metadata = db.Column(db.JSON)  # Extended metadata about package contents
     
     # Licensing and provenance
     license_type = db.Column(db.String(100))

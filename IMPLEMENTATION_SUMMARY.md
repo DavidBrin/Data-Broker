@@ -131,10 +131,10 @@ frontend/
 ## Technology Stack
 
 ### Backend
-- Flask 2.3.3
-- SQLAlchemy 2.0.20
+- Flask 3.0.0
+- SQLAlchemy 2.0.23
 - PostgreSQL/SQLite
-- Python 3.8+
+- Python 3.12+
 
 ### Frontend
 - React 18.2.0

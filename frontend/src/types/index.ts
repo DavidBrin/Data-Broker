@@ -10,7 +10,7 @@ export interface User {
   email: string;
   full_name?: string;
   organization?: string;
-  role: 'supplier' | 'buyer' | 'admin';
+  role: 'supplier' | 'buyer' | 'both';
   is_supplier: boolean;
   is_buyer: boolean;
   country?: string;

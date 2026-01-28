@@ -76,7 +76,7 @@ data-broker/
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 3.12+
 - Node.js 16+
 - npm or yarn
 - (Optional) PostgreSQL for production
